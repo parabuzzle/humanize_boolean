@@ -1,0 +1,4 @@
+pirate:
+  boolean:
+    "yes": "Aye-Aye"
+    "no": "Nooo"
