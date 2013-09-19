@@ -29,6 +29,25 @@ Or install it yourself as:
 
     false.humanize # => "No"
 
+### I18n internationalization support
+
+i18n internationalization is out of the scope of this document but... if you want to see it in action you can use the provided pirate locale in the test directory
+
+First you add the locale to the i18n load path like so:
+
+    I18n.load_path << "test/pirate.yml"
+
+Then you tell i18n to use the pirate locale like this:
+
+    I18n.locale = :pirate
+
+Now just use humanize and see the translated strings:
+
+    true.humanize # => "Aye-Aye"
+
+    false.humanize # => "Argh"
+
+
 
 ## Contributing
 
