@@ -2,6 +2,7 @@ humanize_boolean
 ===
 
 [![Gem Version](https://badge.fury.io/rb/humanize_boolean.png)](http://badge.fury.io/rb/humanize_boolean)
+[![Build Status](https://travis-ci.org/parabuzzle/humanize_boolean.png?branch=master)](https://travis-ci.org/parabuzzle/humanize_boolean)
 
 Adds the humanize method for true and false to provide 'Yes' and 'No' respectively.
 
