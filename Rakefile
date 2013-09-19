@@ -42,7 +42,7 @@ namespace :gem do
   end
 
   task :push do
-    sh "gem push `ls | grep .gem | grep -v gemspec`"
+    sh "gem push pkg/`ls pkg | grep .gem`"
   end
 
 end

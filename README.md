@@ -1,6 +1,8 @@
 humanize_boolean
 ===
 
+[![Gem Version](https://badge.fury.io/rb/humanize_boolean.png)](http://badge.fury.io/rb/humanize_boolean)
+
 Adds the humanize method for true and false to provide 'Yes' and 'No' respectively.
 
 humanize_boolean also natively supports i18n translations too so it can be used in internationalized rails apps.
