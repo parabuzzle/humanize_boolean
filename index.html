@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Humanize boolean by parabuzzle</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Humanize boolean</h1>
+        <p>Adds humanize method for true and false to return 'Yes' and 'No' respectively</p>
+
+        <p class="view"><a href="https://github.com/parabuzzle/humanize_boolean">View the Project on GitHub <small>parabuzzle/humanize_boolean</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/parabuzzle/humanize_boolean/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/parabuzzle/humanize_boolean/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/parabuzzle/humanize_boolean">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="humanize_boolean" class="anchor" href="#humanize_boolean"><span class="octicon octicon-link"></span></a>humanize_boolean</h1>
+
+<p><a href="http://badge.fury.io/rb/humanize_boolean"><img src="https://badge.fury.io/rb/humanize_boolean.png" alt="Gem Version"></a></p>
+
+<p>Adds the humanize method for true and false to provide 'Yes' and 'No' respectively.</p>
+
+<p>humanize_boolean also natively supports i18n translations too so it can be used in internationalized rails apps.</p>
+
+<p>i18n keys are locale.boolean.yes and locale.boolean.no</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'humanize_boolean'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install humanize_boolean
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>true.humanize # =&gt; "Yes"
+
+false.humanize # =&gt; "No"
+</code></pre>
+
+<h3>
+<a name="i18n-internationalization-support" class="anchor" href="#i18n-internationalization-support"><span class="octicon octicon-link"></span></a>I18n internationalization support</h3>
+
+<p>i18n internationalization is out of the scope of this document but... if you want to see it in action you can use the provided pirate locale in the test directory</p>
+
+<p>First you add the locale to the i18n load path like so:</p>
+
+<pre><code>I18n.load_path &lt;&lt; "test/pirate.yml"
+</code></pre>
+
+<p>Then you tell i18n to use the pirate locale like this:</p>
+
+<pre><code>I18n.locale = :pirate
+</code></pre>
+
+<p>Now just use humanize and see the translated strings:</p>
+
+<pre><code>true.humanize # =&gt; "Aye-Aye"
+
+false.humanize # =&gt; "Argh"
+</code></pre>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/parabuzzle">parabuzzle</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
