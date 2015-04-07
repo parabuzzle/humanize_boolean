@@ -2,3 +2,4 @@ pirate:
   boolean:
     "yes": "Aye-Aye"
     "no": "Argh"
+    "nil": "Arrr"

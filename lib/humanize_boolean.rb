@@ -24,3 +24,14 @@ class FalseClass
     I18n.t "boolean.no", :default => "No"
   end
 end
+
+class NilClass
+  # The humanize method to return the
+  # string "Nothing" or a translation of that for the key
+  # locale.boolean.nil
+  #
+  #  nil.humanize # => "Nothing"
+  def humanize
+    I18n.t "boolean.nil", :default => "Nothing"
+  end
+end
