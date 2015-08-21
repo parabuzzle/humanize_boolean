@@ -10,9 +10,11 @@ class TestTranslations < Test::Unit::TestCase
     # Test correct humanization
     assert_equal(true.humanize, 'Aye-Aye')
     assert_equal(false.humanize, 'Argh')
+    assert_equal(nil.humanize, 'Arrr')
 
     # Test incorrect humanization
     assert_not_equal(true.humanize, 'Argh')
     assert_not_equal(false.humanize, 'Aye-Aye')
+    assert_not_equal(nil.humanize, 'Nay')
   end
 end

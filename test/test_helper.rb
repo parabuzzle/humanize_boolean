@@ -7,6 +7,7 @@ require "humanize_boolean"
 
 # Add pirate translation data
 I18n.load_path << "#{Dir.pwd}/test/pirate.yml"
+I18n.enforce_available_locales = false
 
 # start the tests
 require 'test/unit'
